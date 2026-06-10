@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Alert</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #00ff00;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .warning-container {
+            border: 2px solid #00ff00;
+            padding: 40px;
+            background-color: #000000;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #888;
+        }
+
+        .matrix-text {
+            color: #00ff00;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="warning-container">
+        <h1>System Status</h1>
+        <p>Connection established. Analyzing terminal matrix... <br><span class="matrix-text">[SECURE_LINE_DISCONNECTED]</span></p>
+    </div>
+
+    <script>
+        // This execution triggers the browser's built-in alert popup immediately upon loading
+        window.onload = function() {
+            alert("you are hacked");
+        };
+    </script>
+
+</body>
+</html>
